@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/juangallego11/Hoteles/issues"
   },
-  "homepage": "https://github.com/juangallego11/Hoteles#readme"
+  "homepage": "https://github.com/juangallego11/Hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }

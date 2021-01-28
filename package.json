@@ -19,5 +19,10 @@
   "homepage": "https://github.com/juangallego11/Hoteles#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }

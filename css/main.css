@@ -5,14 +5,14 @@
 }
 footer{
     padding: 10px 10px 0 10px;
-    background-color: green;
+    background-color: rgb(68, 128, 0);
     margin-bottom: 0px;
     margin-top: 10px;
 }
 .card-hotel{
-    flex: 1 15opx;
-    padding: 2px 5px 2px 5px;
-    margin-top: 10px;
+    flex: 1 150px;
+    padding: 3px 3px 5px 5px;
+    margin-top: 15px;
 }
 .btn-reserva{
     width: 100%;

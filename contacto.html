@@ -11,7 +11,7 @@
     <link href="css/main.css" rel="stylesheet" />
 </head>
 
-<body background="/images/maleta.jpg">
+<body>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
@@ -27,79 +27,80 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr auto">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
-                <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto </a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contacto </a></li>
             </ul>
         </div>
     </nav>
     <div class="jumbotron">
-        <h1><b> Primer Proyecto En Bootstrap 4</h1></b>
+        <h1>Bootstrap Tutorial</h1>
         <br />
         <br />
     </div>
     <div class="container">
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrum">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">Home/</li>
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
             </ol>
         </nav>
-        <div class="d-flex flex-wrap">
-            <div class="col-sm-4">
-                <h3><b>¿Como funciona?</b></h3>
-                <p>Llama al 3153479141</p>
+        <h1>Dejanos tu comentario</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su Nombre">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su Apellido">
+                </div>
+                <div class="form-group col-sm-6 ">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su E-mail">
+                </div>
             </div>
-            <div class="col-sm-4">
-                <h3><b>¿Cual es el precio?</b></h3>
-                <p>entre 700 USD Y 900 USD</p>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="direccion">Direccion</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Ingrese su Domicilio">
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="ciudad">Ciudad</label>
+                    <select id="direccion" class="form-control">
+                        <option selected>Pereira</option>
+                        <option>Cali</option>
+                        <option>Bogota</option>
+                        <option>Medellin</option>
+                    </select>
+                </div>
             </div>
-            <div class="col-sm-4">
-                <h3><b>¿Que planes hay?</b></h3>
-                <p>tenemos plan basico o luxury</p>
-            </div>
-        </div>
-        <hr>
+            <div class="form-group">
+                <label for="comentario">Comentario</label>
+                <textarea id="comentario" class="form-control" rows="10">
 
-        <div class="d-flex-row flex-wrap">
-            <div class=" card-hotel d-flex flex-column justify-content">
-                <h1>Hotel Lima</h1>
-                <button class="btn btn-primary btn-reserva">Compre ya</button>
+                    </textarea>
             </div>
-            <div class=" card-hotel d-flex flex-column justify-content">
-                <h1>Hotel Peru</h1>
-                <button class="btn btn-primary btn-reserva">Compre ya</button>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    Quiero que me contacten
+                </label>
             </div>
-            <div class=" card-hotel d-flex flex-column justify-content">
-                <h1>Hotel Baru</h1>
-                <button class="btn btn-primary btn-reserva">Compre ya</button>
-            </div>
-            <div class=" card-hotel d-flex flex-column justify-content">
-                <h1>Hotel Tekay</h1>
-                <button class="btn btn-primary btn-reserva">Compre ya</button>
-            </div>
-            <div class=" card-hotel d-flex flex-column justify-content">
-                <h1>Hotel Mucava</h1>
-                <button class="btn btn-primary btn-reserva">Compre ya</button>
-            </div>
-            <div class=" card-hotel d-flex flex-column justify-content">
-                <h1>Hotel Mesiere</h1>
-                <button class="btn btn-primary btn-reserva">Compre ya</button>
-            </div>
-        </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
     <footer>
         <div class="row">
-            <div class="col-sm-4 d-flex-row">
+            <div class="col-sm-4 d-flex align-items-center flex-column">
                 <a href="http://www.facebook.com">facebook <p><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                    height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                    <path
-                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                </svg></p></a>
+                            height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg></p></a>
                 <a href="http://www.twitter.com">Twitter<p><svg xmlns="http://www.w3.org/2000/svg" width="16"
                             height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
                             <path
